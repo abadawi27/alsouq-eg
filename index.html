@@ -4,10 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>السوق | alsouq.eg</title>
-    <!-- استدعاء ستايل Tailwind المباشر والمضمون -->
+    <!-- استخدام مكتبة Tailwind عبر CDN المحدث -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* ضمان دعم الاتجاه من اليمين لليسار والتنسيقات الأساسية */
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        background-color: #f9fafb;
+        color: #1f2937;
+      }
+    </style>
   </head>
-  <body class="bg-gray-50 text-gray-800 font-sans">
+  <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
